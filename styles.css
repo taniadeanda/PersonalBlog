@@ -1,0 +1,267 @@
+/* aplicar estilos a cada sección */
+
+header { /* aplicar estilos a la parte de head */
+    display: flex; /*flexbox: responsivo */ 
+    justify-content: space-between; /* separa el título a la izquierda y el nav a la derecha */
+    align-items: center; /* centra con el titulo verticalmente */
+    font-family: 'Inter', sans-serif; /* ya es negro predeterminado? */
+    font-weight: 400; /*negritas que no se reflejan pero bueno.*/
+    font-size: 25px; /* tamaño en px*/
+}
+
+header h1 { 
+    margin: 0; /* elimina el espacio extra arriba y abajo del h1 */ 
+}
+
+nav a { /*para las letras hipervinculo de nav*/
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: black;
+    margin-left: 35px; /*separacion entre enlaces*/
+}
+
+.group { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 40px; /* espacio entre header, bienvenida, viajes y footer */ 
+}
+
+.bienvenida { /*.  seccion*/
+    width: auto; /*se ajusta a lo ya establecido (formato)*/
+    height: 500px;
+    object-position: center top; /* mueve el foco hacia arriba */
+    font-family: 'Judson', serif;
+    font-size: xx-large;
+    display: flex; /*centra la imagen*/
+    flex-direction: column; /* coloca texto y botón uno debajo del otro */ 
+    justify-content: center; /* centra verticalmente dentro del rectángulo */ 
+    align-items: flex-start; /* alinea todo a la izquierda */
+    padding: 60px; /*como margen pero responsivo*/
+    background-image: url('img/FotoInicio.jpg'); /*FALTAA*/
+    background-repeat: no-repeat; /* evita que se repita varias veces la imagen */
+    background-position: center;
+    background-size: cover; /* hace que la imagen cubra todo el rectángulo */
+    color: white; /*texto que esta encima en bco*/
+    border-radius: 20px; /* redondea el rectángulo */
+    overflow: hidden; /*par que no se salga de las esquinas */
+}
+
+.boton {
+    background-color: rgba(217, 217, 217, 0.3);  /*transparencia SOLO al boton*/
+    border-radius: 15px; 
+    padding: 12px; /*espacio de adentro*/
+    font-size: 15px;
+    width: 100px;
+    height: 10px;
+    text-align: center;
+    justify-content: center; /* centra horizontalmente */ 
+    align-items: center; /* centra verticalmente */
+    display: flex;
+    color: white; /*color de texto*/
+}
+
+.boton a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.678); /*color de texto*/
+}
+
+.viajes { /*.  seccion*/
+    width: auto; /*se ajusta a lo ya establecido (formato)*/
+    height: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* centra verticalmente */
+    justify-content: center; /* centra horizontalmente */ 
+    font-family: 'Judson', serif;
+    font-size: 22px;
+    justify-content: center; /* centra verticalmente dentro del rectángulo */ 
+    padding: 30px; /*como margen pero responsivo*/
+    background-position: center;
+    background-color: #d0c42083; 
+    border-radius: 15px; /* redondea el rectángulo */
+    overflow: hidden; /*par que no se salga de las esquinas */
+}
+
+body { /* aplicar estilos TODO */
+    margin: 0;
+    display: flex;
+    padding: 60px; /*margen */
+    gap: 40px; /* espacio entre cada seccion */
+    flex-direction: column; /* apila header, secciones y footer */ 
+    font-family: 'Inter', sans-serif;
+}
+
+.viajes_blog {
+    font-family: 'Judson', serif;
+    color: black;
+    flex-direction: row; /*coloca los bloques*/
+    display: flex; /*flexbox: responsivo */
+    justify-content: space-around;/* Espacio entre ellos */
+    gap: 5px; /*espacio entre cada div/bloque/cuadro*/
+    margin-bottom: 200px;
+    overflow: hidden; /* evita que la imagen se salga */
+}
+
+.viajes_blog div { /*formato para los div y tamaño de cada rectangulo*/
+    border-radius: 15px;
+    padding: 0; 
+    flex: 1; /* todos ocupan el mismo espacio */
+}
+
+.viajes_blog a { /*formato para links*/
+    font-family: 'Judson', serif;
+    color: black;
+    text-decoration: none;
+}
+
+.viajes_blog img { /*imagenes de los cuadros*/
+    display: block; 
+    height: 220px; 
+    width: 100%;
+    margin: 0;
+    object-fit: cover;  /* recorta la imagen para llenar el rectángulo */
+}
+
+.viajes_blog p { /*todos los parrafos de*/
+    color: grey;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.rectangulo { /*tamaño de los bloques con img*/
+    border: 2px solid rgba(128, 128, 128, 0.178);   /* grosor, estilo y color del borde */
+    border-radius: 15px;      /* esquinas redondeadas */
+    height: 500px; /*alto*/
+    width: 180px;
+    overflow: hidden; /*que la imagen no se salga */
+    display: flex;
+    flex-direction: column; /* organiza en columna */
+    padding: 0;
+}
+
+.rectangulo a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;   /* ocupa todo el rectángulo */
+}
+
+.subrayado {
+    text-decoration: underline; /* solo este texto se subraya */
+    font-size: 20px;
+    padding: 15px;
+    margin-top: auto;  /*empuja el texto hacia abajo */
+}
+
+.rectangulo p {
+    margin: 5px 10px;
+}
+
+.rectangulo span {
+    margin-left: 10px;  /* margen izquierdo */
+    margin-right: 10px; /* margen derecho */
+    margin-top: auto;  
+    margin-bottom: 15px;  
+}
+
+.rectangulo h2 {
+    margin-left: 25px;       /* margen lateral izquierdo */
+    margin-right: 10px;      /* margen lateral derecho */
+    margin-top: 30px;         /* poco espacio arriba */
+    margin-bottom: 5px;      /* poco espacio abajo */
+}
+
+
+.pie {
+    font-family: 'Judson', serif;
+    color: black;
+    display: flex; /*flexbox: responsivo */ 
+    justify-content: space-between; /* separa el título a la izquierda y el nav a la derecha */
+    align-items: center; /* centra con el titulo verticalmente */
+    /*font-size: 25px; tamaño en px*/
+    border-top: 2px solid rgba(128, 128, 128, 0.178);
+}
+
+.pie a {
+    color: grey;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block; /* cada enlace en su propia línea */
+}
+
+.pie ul { /*para formato de lista en pie*/
+    list-style: none; /*quita los puntitos */
+    flex-direction: row; /*coloca los bloques*/
+}
+
+.pie p {
+    color: grey;
+}
+
+.frase {
+    text-align: left; /* alinea texto a la izq*/
+}
+
+.links {
+    text-decoration: none;
+    display: flex; 
+    flex-direction: row; /*coloca los bloques*/
+    gap: 40px; /* espacio entre columnas */
+    align-items: flex-start;/* alinea todos los títulos arriba */
+}
+
+.footer h4 {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+
+
+/*Página SOBRE MI*/
+.presentacion {
+    display: flex; /*flexbox: responsivo */ 
+    justify-content: space-between; /* separa el parrafo a la izquierda y la foto a la derecha */
+    align-items: center; /* centra con el titulo verticalmente */
+    gap: 40px;   /* espacio entre texto e imagen */
+    padding: 50px 0;   /* espacio arriba y abajo */
+    padding-bottom: 200px;
+}
+
+.presentacion h1 {
+    font-size: 45px;
+    margin: 0;  /*uqita los margenes por default que tiene h1*/
+}
+
+.presentacion p {
+    color: grey;
+    padding-right: 80px;
+    font-size: 20px;
+    line-height: 1.5; /* aumenta el espacio vertical entre líneas */
+}
+
+.presentacion img {
+    border-radius: 15px;      /* esquinas redondeadas */
+    height: 400px; /*alto*/
+    width: 400px;
+    object-fit: cover; 
+    object-position: center;
+    display: block;   /* evita espacio invisible debajo */
+}
+
+.yo {
+    line-height: 1.8; /* aumenta el espacio vertical entre líneas */
+}
+
+.michi {
+    height: 50px;
+    width: 50px;
+    padding-bottom: 150px;
+}
+
+.default {
+    gap: 0;
+}
+
+.default span {
+    font-size: 10px;
+    color: grey;
+}
